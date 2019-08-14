@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400i|Roboto:400,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="contactFlex">
+            <nav class="wrapper contactNav">
+
+                <!-- NAV BAR -->
+
+                <input type="checkbox" id="chk">
+                <label for="chk" class="show-nav-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <ul class=nav2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <label for="chk" class="hide-nav-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </ul>
+
+
+            </nav>
+
+        </div>
+
+        <div class="contactHeading">
+            <h1>Get In Touch</h1>
+        </div>
+    </header>
+
+    <main class="wrapper contactMain">
+
+        <div class="blueForm">
+            <form action="#" class="commentForm">
+
+
+
+                <label class="visuallyHidden" for="username">Name</label>
+                <input type="text" name="username" class="username" id="username" placeholder="Name">
+
+                <label class="visuallyHidden" for="email">Email Address</label>
+                <input type="text" name="useremail" class="useremail" id="useremail" placeholder="Email address">
+
+                <label class="visuallyHidden" for="message">Message"</label>
+                <textarea name="message" class="message" id="message" placeholder="Message" cols="40"
+                    rows="10"></textarea>
+
+                <label class="visuallyHidden" for="submit">Post Comment</label>
+
+                <button type="submit" name="submit" class="submitButton" id="submit">Sbmit</button>
+
+            </form>
+        </div>
+
+
+        <section class="media">
+            <ul class="socialMedia">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i> <i class="fab fa-twitter"></i>
+                <i class="fab fa-whatsapp"></i>
+            </ul>
+
+            <ul class="contactInfo">
+                <li><a href="mailto:info@gmail.com">info@gmail.com</a></li>
+                <div class="generalInfo">
+
+                    <li>123-456-7890</li>
+                    <li>123 Queen Street West, Unit 10</li>
+                    <li>Toronto, Ontario</li>
+                    <li>M5V2D5</li>
+                </div>
+            </ul>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Copyright &copy;2019 HackerYou</p>
+    </footer>
+
+</body>
+</html>

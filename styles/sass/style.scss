@@ -1,0 +1,723 @@
+@import "setup";
+@import "typography";
+
+
+
+
+header .first{
+    background-image: url("../assets/Boat-Ride-Adventures-final-assets/home-header.jpg");
+    background-size: cover;
+    height: 88vh;    
+    position: relative;
+    background-repeat: no-repeat;        
+         
+  }
+
+  .heading h1,
+  .sailingBoat img {
+  width:50%;
+}
+  .headerFlex{
+    position: relative;
+    flex-direction: row;       
+      
+  }
+
+.heading h1{   
+  position: absolute;
+  width: 55%;
+  left: 120px;
+  bottom: 10px;
+  top: 380px;
+}
+.sailingBoat img{
+    position: absolute;
+    right: 0;
+    bottom:-10%;
+    max-width: 100%;
+    @media(max-width:940px) {
+      position: absolute;
+      bottom: -30%;
+      right: 20%;
+      left: 30%;
+    }
+          
+  }
+        
+  ul.nav{
+    display: flex;
+    width: 50%;    
+    justify-content:space-around;
+    padding-left: 80px;
+    padding-top: 60px;      
+    
+  }
+  
+  .main1Left,
+  .contentRight{
+    width: 50%;
+  }
+
+  .main{
+    display: flex;
+    background-color: $iceblue;
+    padding: 200px 15px 50px 15px;    
+  }
+  
+  .flexLeft{
+    flex: start;
+    padding-left: 100px;
+    @media (max-width:940px){
+      margin: auto;     
+      width: 100%;
+    }
+        
+  }
+  .flexRight{
+    flex: end;
+    padding-right: 100px;
+
+    @media (max-width:940px){      
+    width:100%;
+  }
+  }
+
+  .icon {
+    display: flex;
+    flex-wrap: wrap;
+       
+  }
+  
+  .icon p{
+    padding-left: 60px;
+  }
+  .fas{
+    flex: start;   
+     
+  }
+
+  .main1{
+    background-color: $twilightBlue;
+    display: flex;
+    
+  }
+  .main1Left{
+    position: relative;    
+    margin-right: 30px;
+  }
+  .main1Left img{
+    flex: start;
+    width: 100%;
+    position: absolute;
+    top: -5%;
+    left: 0;
+    -webkit-box-shadow: 15px 15px $dandelion;
+          box-shadow: 15px 15px $dandelion;
+  left: -100px;
+  top: -30px;    
+    @media(max-width:940px){
+      position: absolute;
+      top:80%;
+      left: 5%;
+  }
+}
+  .contentLeft{
+    padding:420px 40px 50px 100px;
+    @media(max-width:940px){
+      text-align: center;
+      padding-top: 20px;
+      
+    }
+  }
+  .contentLeft h3{
+   text-align: right;   
+  }
+  .contentLeft .button{
+    margin-left: 280px;
+  }
+  .contentRight .button,
+  .lifetimeContent .button{
+    margin-left: 10px;    
+  }
+  .main1Right img{
+    position: absolute;
+    right: 0;
+    bottom: -10%;    
+  }
+  .contentRight{
+    flex: end;
+    max-width: 100%;    
+    position: relative;
+    margin-left: 30px;
+    padding: 40px 35px 0 15px;
+    @media(max-width:940px){
+      text-align: center;
+      padding-top: 20px;
+    }
+  }
+  .contentRight img{
+    max-width: 100%;
+    position: absolute;
+    bottom: -5%;
+    right: 0;    
+  }
+
+  .vacation{
+    text-align:left;
+    padding: 100px;
+    background-color:$iceblue;
+    @media(max-width:940px){
+      text-align: center;
+    }
+        
+  }
+  .vacationContent{
+    padding: 40px 200px 100px 200px; 
+       
+  }
+  .vacation h2,
+  .vacation button{
+    text-align: center;
+  }
+
+.bannerImage{
+  width: 100%;
+  @media(max-width:940px){
+    width: 100%;
+  }
+  
+}
+.bannerImage img{
+  width: 100%;
+  @media(max-width:940px){
+    width: 100%;
+  }
+  @media(max-width:768px){
+    width: 100%;
+  }
+  @media(max-width:480px){
+    width: 100%;
+  }
+}
+
+.smallBox{
+  background-color: $iceblue;
+  display: flex;
+  padding:10px 100px 20px;
+}
+.smallBox img{
+  flex: start;
+  flex: 1 0 auto;
+  width: 100%;
+  padding-top: 70px;  
+}
+.lifetimeContent{
+  flex: end;
+  width: 55%;
+  margin: 50px 30px 40px 85px;
+}
+
+.gallery{
+  background-color:$twilightBlue;
+  // @media(max-width:940px){
+  //   display: flex;
+  //   flex:column;
+  // }
+
+}
+.flexContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 100px;
+}
+.gallery img{
+  width: 30%;
+  // @media(max-width:940px){
+  //   -webkit-box-orient: vertical;
+  //   -webkit-box-direction: normal;
+  //       -ms-flex-direction: column;
+  //           flex-direction: column;
+  //   padding: 0;
+  //   width:100%;
+  // }
+}
+
+// NAV BAR FOR HOME PAGE
+
+
+.first,
+.nav{
+    position: sticky;
+    top: 0;
+}
+.show-nav-btn,
+.hide-nav-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-nav-btn{
+    float: right;
+}
+.show-nav-btn i{
+    line-height: 100px;
+}
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+@media screen and (max-width:800px) {
+    .show-nav-btn,
+    .hide-nav-btn{
+        display: block;
+    }
+
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: $dandelion;
+    top: 0;
+    right: -100%;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+
+}
+.nav a{
+    display: block;
+    padding: 20px;
+}
+.hide-nav-btn{
+    position:absolute;
+    top: 40px;
+    right: 40px;
+}
+#chk:checked ~ .nav{
+    right: 0;
+}
+}
+
+
+// BLOG PAGE CSS
+
+header .blogFlex{
+  background-image: url("../assets/Boat-Ride-Adventures-final-assets/blog-header.jpg");
+  background-size:cover;
+  height: 88vh;  
+  background-repeat: no-repeat; 
+       
+}
+.blogHeading h1,
+.blogImage img {
+  width:50%;
+}
+.blogHeading h1{
+  position: absolute;
+  width: 55%;
+  left: 120px;
+  bottom: 10px;
+  top: 200px;
+}
+
+.blogImage img{
+  position: absolute;
+  right: 0;
+  top:-8%;
+  max-width: 100%;
+  -webkit-box-shadow: -15px 15px $dandelion;
+          box-shadow: -15px 15px $dandelion;
+  @media(max-width:940px){
+    width: 100%;
+    margin: auto;    
+    position: static;
+  }
+      
+}
+
+ul.nav1{
+  display: flex;
+  width: 50%;    
+  justify-content:space-around;
+  padding-left: 100px;
+  padding-top: 40px;       
+  
+}
+.blogMain{
+  display: flex;
+  justify-content: space-between;
+  position: relative; 
+}
+.blog{
+    width: 35%;
+}
+.blogLeft{
+  background-color:$twilightBlue;
+  margin-top: 200px;
+  margin-left: 80px;
+  padding:30px 50px 20px 50px;
+   
+}
+.blogLeftImage img{
+  position: absolute;
+  top:5%;
+  left: 0;
+}
+
+.blogLeftContent2{
+  padding-top:50px;
+}
+.blogLeftContent2 li{
+  list-style-type: disc;
+  list-style-position: inside;
+  color: white;
+  margin: 0;
+}
+
+.blogFlexRight{
+  width: 55%;     
+  
+}
+.blogRightContent{
+    padding: 330px 20px 50px 100px;
+    border: 5px solid yellow;
+    margin-left: 50px;
+    border-right: none;           
+       
+  } 
+
+
+.blogRightContent h2,
+.blogRightContent p{
+  padding-top: 40px;  
+}
+.commentsSection{
+    flex: end;
+    padding-left: 100px;
+    padding-top: 50px;     
+}
+
+.commentContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-right: 15px;
+}
+
+.imageContainer {
+    width: 92px;
+    height: 89px;
+    margin-right: 10px;
+}
+.commentContainer .heading{
+    color: $twilightBlue;
+    padding-bottom: 20px;
+}
+
+.textContainer {
+    width: calc(100% - 92px - 10px);
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.commentForm {
+    padding: 40px 100px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media(max-width:768px){
+      width: 100%;
+      text-align: center;
+    }
+   @media(max-width:480px){
+     position: center;
+   }
+}
+  
+ 
+  .username,
+  .useremail,
+  .message {
+    background: transparent;
+    color: #fff;
+    border: none;
+  }
+  
+  .username,
+  .useremail {
+    width: 48%;
+    margin: 0 0 40px 0;
+    border-bottom: 2px solid $dandelion;
+    justify-content: space-between;
+  }
+  
+  .message {
+    width: 100%;
+    border: 2px solid $dandelion;
+  }
+  
+  .submitButton {
+    width: 100%;
+    height: auto;
+    background:$twilightBlue;
+    color: $dandelion;
+    border: none;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-family: 'IM Fell English', serif;
+    margin: 40px 0;
+    display: block;
+  }
+  .post .submitButton{ 
+    padding: 10px 200px;
+    background-color: $twilightBlue;
+    color: $dandelion;
+
+ }
+  .commentForm input::placeholder,
+  .commentForm textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 700;
+       
+  }
+
+
+  // BLOG NAV
+  
+  .BlogNav,
+.nav1{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.show-nav-btn,
+.hide-nav-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-nav-btn{
+    float: right;
+}
+.show-nav-btn i{
+    line-height: 100px;
+}
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+@media screen and (max-width:800px) {
+    .show-nav-btn,
+    .hide-nav-btn{
+        display: block;
+    }
+
+.nav1{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: $dandelion;
+    top: 0;
+    right: -100%;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+
+}
+.nav1 a{
+    display: block;
+    padding: 20px;
+}
+.hide-nav-btn{
+    position:absolute;
+    top: 40px;
+    right: 40px;
+}
+#chk:checked ~ .nav1{
+    right: 0;
+}
+}
+
+
+
+// CONTACT PAGE
+
+
+header .contactFlex{
+  background-image: url("../assets/Boat-Ride-Adventures-final-assets/contact-header.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  max-width: 100%;  
+  background-repeat: no-repeat;
+       
+}
+
+.contactFlex{
+  position: relative;
+  flex-direction: row;
+}
+.contactHeading h1{
+  position: absolute;
+  width: 55%;
+  left: 120px;
+  bottom: 10px;
+  top: 200px;
+
+}
+
+ul.nav2{
+  display: flex;
+  width: 50%;    
+  justify-content:space-around;
+  padding-left: 100px;
+  padding-top: 40px;       
+  
+}
+.contactMain{
+    background-color: #eafefc;
+    display: flex;
+    flex-direction: row;
+    position: relative;     
+}
+.media{
+  display: flex;
+  width: 35%;
+  padding:150px 20px 120px 40px;
+  @media(max-width:480px){
+    width: 100%;
+    margin: auto;   
+  }
+}
+.contactInfo{
+  padding-top: 30px;
+  margin-left: 5px;
+}
+.generalInfo{
+  margin-top: 20px;
+}
+.contactInfo a{
+  text-decoration: none;
+}
+
+.socialMedia i{
+  color: $twilightBlue; 
+  
+}
+
+.blueForm{
+    background-color: $twilightBlue;
+    width: 55%;        
+    display: flex;
+    position: absolute;
+    top:-35%;
+    right:5%;
+    -webkit-box-shadow: 15px 15px #fdd908;
+          box-shadow: 15px 15px #fdd908;
+          @media(max-width:480px){
+            width: 100%;
+            position: relative;
+            bottom: -50%;
+            left:20%;
+          }     
+}
+.commentForm button {
+    background: $dandelion;
+    color:$twilightBlue;    
+ }
+
+ .commentForm input::placeholder,
+  .commentForm textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color:black;
+    font-weight: 700;       
+  }
+  .blueForm .commentForm input::placeholder,
+  .blueForm .commentForm textarea::placeholder{
+    color:$white;
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+  }
+
+
+
+
+// NAV BAR 
+
+.contactNav,
+.nav2{
+    position: sticky;
+    top: 0;    
+}
+.show-nav-btn,
+.hide-nav-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+.show-nav-btn{
+    float: right;
+}
+.show-nav-btn i{
+    line-height: 100px;
+}
+#chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: 1;
+}
+@media screen and (max-width:800px) {
+    .show-nav-btn,
+    .hide-nav-btn{
+     display: block;
+    }
+
+.nav2{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: $dandelion;
+    top: 0;
+    right: -100%;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+
+}
+.nav2 a{
+    display: block;
+    padding: 20px;
+}
+.hide-nav-btn{
+    position:absolute;
+    top: 40px;
+    right: 40px;
+}
+#chk:checked ~ .nav2{
+    right: 0;
+}
+}
+
+
+
+
+
+
+

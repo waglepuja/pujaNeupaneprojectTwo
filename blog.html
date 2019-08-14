@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English:400i|Roboto:400,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="blogFlex">
+            <nav class="wrapper blogNav">
+
+                <!-- NAV BAR -->
+
+                <input type="checkbox" id="chk">
+                <label for="chk" class="show-nav-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <ul class="nav1">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <label for="chk" class="hide-nav-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="blogHeading">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main class=" wrapper blogMain">
+        
+        <aside class="blog">
+            <div class="blogLeftImage">
+                <img src="assets\Boat-Ride-Adventures-final-assets\blog-side-image.jpg" alt="front left of a boat">
+            </div>
+
+            <div class="blogLeft">
+                <div class="blogLeftContent1">
+                    <h3>Our Mission</h3>
+                    <p>Nam dapibus euismod elementum nisi quis eleifend velit esse cillum quam.</p>
+                    <p>Find out more.</p>
+                </div>
+                <div class="blogLeftContent2">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>Donec facilisis tortor ut</li>
+                        <li>Augue lacinia at viverra</li>
+                        <li>Semper sed sapien metus</li>
+                        <li>Scelerisque nec pharetra id</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <section class=" wrapper blogFlexRight">
+            <div class="blogImage">
+                <img src="assets\Boat-Ride-Adventures-final-assets\blog-post-image.jpg" alt="flag of a boat">
+            </div>
+
+            <article>
+
+                <div class="blogRightContent">
+                    <h2>Next Destination</h2>
+                    <p>Monday October 30, 2019 by Sulaire</p>
+                    <p>Curabitur duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum. </p>
+                    <p>In imperdiet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Eget nullam non nisi est sit amet facilisis. Leo integer
+                        malesuada nunc vel risus commodo viverra maecenas accumsan. Aenean euismod elementum nisi quis
+                        eleifend quam.</p>
+                    <p>Prasent excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.</p>
+                </div>
+            </article>
+
+            <section class="commentsSection">
+                <h2>Comments:</h2>
+                <div class="commentContainer">
+                    <div class="imageContainer">
+                        <img src="assets\Boat-Ride-Adventures-final-assets\comment-1.jpg" alt="a guy smiling"
+                            class="image">
+                    </div>
+                    <div class="textContainer">
+                        <p class="heading">Tuesday October 9th, 2019 by Ali</p>
+                        <p>Fusce vehicula dolor nullam non nisi est sit amet facilisis. Leo integer malesuada nunc vel
+                            risus commodo viverra maecenas accumsan. Aenean euismod elementum nisi quis eleifend.
+                            Maecenas euvarius risus.</p>
+                    </div>
+                </div>
+
+                <div class="commentContainer">
+                    <div class="imageContainer">
+                        <img src="assets\Boat-Ride-Adventures-final-assets\comment-2.jpg" alt="happy woman">
+                    </div>
+                    <div class="textContainer">
+                        <p class="heading">Wednesday October 10th, 2019 by Lisa</p>
+                        <p>Donec viverra eleifend lacus,excepteur sint occaecat cupidatat non proident, sunt in culpa
+                            qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <form action="#" class="wrapper commentForm">
+
+                <label class="visuallyHidden" for="username">Name</label>
+                <input type="text" name="username" class="username" id="username" placeholder="Name">
+
+                <label class="visuallyHidden" for="email">Email Address</label>
+                <input type="text" name="useremail" class="useremail" id="useremail" placeholder="Email address">
+
+                <label class="visuallyHidden" for="message">Comment"</label>
+                <textarea name="message" class="message" id="message" placeholder="Comment" cols="40"
+                    rows="10"></textarea>
+
+                <label class="visuallyHidden" for="submit">Post Comment</label>
+
+                <div class="post">
+
+                <button type="submit" name="submit" class="submitButton" id="submit">Post Comment</button>
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy;2019 HackerYou</p>
+    </footer>
+</body>
+
+</html>
